@@ -1,0 +1,27 @@
+{
+  "name": "runtime-autocomplete",
+  "version": "0.0.1",
+  "description": "An express JSON route handler that suggests further properties given a line of code, as if tabbing on a REPL.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnvm/runtime-autocomplete.git"
+  },
+  "keywords": [
+    "autocomplete",
+    "REPL",
+    "brackets",
+    "IDE",
+    "code-completion"
+  ],
+  "author": "jnvm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jnvm/runtime-autocomplete/issues"
+  },
+  "homepage": "https://github.com/jnvm/runtime-autocomplete#readme",
+  "dependencies": {}
+}
