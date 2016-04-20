@@ -42,7 +42,7 @@ module.exports=function(opts){
             })()
                 , say = intent == "suggest" ? {
                     hints: getAllPropertyNames(it)
-                        .filter(x => /*!x.match(/\b(prototype|caller|router|arguments|__.*__)\b/) &&*/ (startWith ? x.startsWith(startWith) : true))
+                        .filter(x => /*!x.match(/\b(prototype|caller|router|arguments|__.*__)\b/) &&*/ (startWith ? x.match(new RegExp("^"+startWith,"i")) : true))
                         //.slice(0,50)//...no...no more than that, please be one letter more specific
                         .map(propName => {
                             //console.log(x);
